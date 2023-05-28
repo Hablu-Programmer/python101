@@ -1,22 +1,17 @@
-answer  = input("Do You Want To Play This Advanture Game? [Yes/No] ")
+answer = input("do you want to play this game? [Yes/No]:")
 
 if answer == "yes":
-    print("welcome buddy ")
-    answer = input("do you want to explore the cave / jungle [cave/jungle]" )
-    if answer == "cave":
-       print("you go into the cave and see bear sleeping ")
+    print("welcome to the game!")
+    answer = input("do you want to go jungle or cave? [jungle/ cave]:")
+    if answer == "jungle":
+        print("you see the hungry tiger 😑 Tiger will eat you. game close")
+    elif answer == "cave":
+        print("you seen the bear in front of cave")
+        answer = input("do you want to fight with the bear or run away! [fight/run ]: ")
+        if answer == "fight":
+            print("bear is too much strong! you loss the game!")
+        else:
+            print("wow! still You Are alive!")
 
-       answer = input("do you want to fight or run? [fight/run]")
-       if answer == "fight":
-           print("bears are really strong! you lose")
-       elif answer == "run":
-           print("you run away! you won")
-       else:
-           print("oh! you loss man!")
-    elif answer == "jungle":
-        print("you meet a tiger & You Eateen")
-    else:
-        print("invilied options!")
-else :
-
-    print("play this game if you want to enjoy your self!")
+else:
+    print("The Game Closed")
