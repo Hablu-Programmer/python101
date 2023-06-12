@@ -1,6 +1,5 @@
-word = "Hablu"
-
-Chances = 5
+word  = "Hablu"
+chances = 2
 GuessAdd = []
 done = False
 
@@ -9,22 +8,21 @@ while not done:
         if letter.lower() in GuessAdd:
             print(letter, end = " ")
         else:
-            print("_", end = " ")
+            print("_", end = "")
 
-
-    MyGuess = input(f"text here {Chances}, next guess: ")
+    MyGuess = input(f"Your Changes Is {chances}, Guess The Letter: ")
     GuessAdd.append(MyGuess.lower())
     if MyGuess.lower() not in word.lower():
-        Chances -= 1
-        if Chances == 0:
+        chances -= 1
+        if chances == 0:
             break
 
     done = True
     for letter in word:
         if letter.lower() not in GuessAdd:
-            done= False
+            done = False
 
 if done:
-    print(f"you found the word {word}")
+    print(f"yes, you have won the game, the word is {word} ")
 else:
-    print(f"game over, The Word Is {word}")
+    print("you loss the game")
