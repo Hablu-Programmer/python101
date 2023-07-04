@@ -1,0 +1,2 @@
+[console_scripts]
+player = player.script:main

@@ -1,0 +1,15 @@
+[console_scripts]
+pdistreport = pyramid.scripts.pdistreport:main
+prequest = pyramid.scripts.prequest:main
+proutes = pyramid.scripts.proutes:main
+pserve = pyramid.scripts.pserve:main
+pshell = pyramid.scripts.pshell:main
+ptweens = pyramid.scripts.ptweens:main
+pviews = pyramid.scripts.pviews:main
+
+[paste.server_runner]
+cherrypy = pyramid.scripts.pserve:cherrypy_server_runner
+wsgiref = pyramid.scripts.pserve:wsgiref_server_runner
+
+[pyramid.pshell_runner]
+python = pyramid.scripts.pshell:python_shell_runner
